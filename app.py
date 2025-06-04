@@ -9,7 +9,7 @@ st.set_page_config(page_title="No-Show Predictor", layout="wide")
 # Load model
 @st.cache_resource
 def load_model():
-    return joblib.load("model/no_show_model.pkl")
+    return joblib.load("no_show_model.pkl")
 
 model = load_model()
 
